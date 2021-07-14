@@ -8,11 +8,11 @@ namespace GeometricShapes {
         public Quad quad { get; set; }
 
         public int Perimeter() {
-            return quad.Perimeter();
+            return Convert.ToInt32(quad.Perimeter());
         }
 
         public int Area() {
-            return quad.Side1 * quad.Side2;
+            return Convert.ToInt32(quad.Side1 * quad.Side2);
         }
 
         public Rect2(int s1, int s2) {

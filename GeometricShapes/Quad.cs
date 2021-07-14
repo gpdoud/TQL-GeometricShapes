@@ -5,16 +5,20 @@ using System.Text;
 namespace GeometricShapes {
     class Quad {
 
-        public int Side1 { get; set; }
-        public int Side2 { get; set; }
-        public int Side3 { get; set; }
-        public int Side4 { get; set; }
+        public double Side1 { get; set; }
+        public double Side2 { get; set; }
+        public double Side3 { get; set; }
+        public double Side4 { get; set; }
 
-        public int Perimeter() {
+        public double Perimeter() {
             return Side1 + Side2 + Side3 + Side4;
         }
 
-        public Quad(int s1, int s2, int s3, int s4) {
+        public string WhatAmI() {
+            return "Quad";
+        }
+
+        public Quad(double s1, double s2, double s3, double s4) {
             Side1 = s1;
             Side2 = s2;
             Side3 = s3;
